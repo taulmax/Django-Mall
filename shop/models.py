@@ -1,11 +1,12 @@
 from django.db import models
+
 from django.urls import reverse
-# Create your models here.
 
 
 class Category(models.Model):
     name = models.CharField(max_length=200, db_index=True)
     meta_description = models.TextField(blank=True)
+
     slug = models.SlugField(max_length=200, db_index=True,
                             unique=True, allow_unicode=True)
 
@@ -28,8 +29,7 @@ class Product(models.Model):
     slug = models.SlugField(max_length=200, db_index=True,
                             unique=True, allow_unicode=True)
 
-    image = models.ImageField(
-        upload_to='products/%Y/%m/%d', blank=True)
+    image = models.ImageField(upload_to='products/%Y/%m/%d', blank=True)
     description = models.TextField(blank=True)
     meta_description = models.TextField(blank=True)
 
