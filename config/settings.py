@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.naver',
     'cart',
     'coupon',
+    'order',
 ]
 
 CART_ID = 'cart_in_session'
@@ -166,3 +167,6 @@ AUTHENTICATION_BACKENDS = (
 SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
+
+IAMPORT_KEY = '0173640594858695'
+IAMPORT_SECRET = 'AgPbXIcYRYhvsm5rNWYGDXdQPA4jbBSLSIXPr9Ni84NBrT3fP1WsY9jNJn7VZZHRHFH8PvqYAez18ChX'
