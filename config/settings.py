@@ -46,7 +46,10 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.naver',
+    'cart',
 ]
+
+CART_ID = 'cart_in_session'
 
 DEFAULT_FILE_STORAGE = 'config.asset_storage.MediaStorage'
 
