@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.naver',
     'cart',
+    'coupon',
 ]
 
 CART_ID = 'cart_in_session'
